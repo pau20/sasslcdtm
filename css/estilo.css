@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1023px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "logo nav nav"
+ "contenido contenido contenido"
+ "footer footer footer";
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: 150px 1fr 300px; }
+    .grid-container .logo {
+      grid-area: logo; }
+    .grid-container .nav {
+      grid-area: nav; }
+    .grid-container .encabezado {
+      grid-area: encabezado; }
+    .grid-container footer {
+      grid-area: footer; } }
+
+li {
+	padding: 10px; 
+	list-style-type: none;}
+  li a {
+    color: red;
+	text-decoration: none;}
+    li a:hover {
+      background-color: rgba(244, 212, 144, 0.7); }
+
+.encabezado {
+  padding: 0px; }
+  .encabezado h1 {
+    font-size: 20px; }
+
+footer {
+  background-color: lightblue;
+  display: flex; }
+  footer h3 {
+    color: white; }
